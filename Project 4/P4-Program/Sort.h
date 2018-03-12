@@ -1,6 +1,6 @@
-//
-// Created by Admin on 3/12/18.
-//
+/*
+ *  Data Structures and Algorithm Analysis in C++ (Fourth Edition), by Mark Allen Weiss
+ */
 
 #ifndef P4_PROGRAM_SORT_H
 #define P4_PROGRAM_SORT_H
@@ -74,20 +74,6 @@ void shellsort( vector<Comparable> & a )
         }
 }
 
-/**
- * Standard heapsort.
- */
-template <typename Comparable>
-void heapsort( vector<Comparable> & a )
-{
-    for( int i = a.size( ) / 2 - 1; i >= 0; --i )  /* buildHeap */
-        percDown( a, i, a.size( ) );
-    for( int j = a.size( ) - 1; j > 0; --j )
-    {
-        std::swap( a[ 0 ], a[ j ] );               /* deleteMax */
-        percDown( a, 0, j );
-    }
-}
 
 /**
  * Internal method for heapsort.
@@ -123,6 +109,23 @@ void percDown( vector<Comparable> & a, int i, int n )
     }
     a[ i ] = std::move( tmp );
 }
+
+
+/**
+ * Standard heapsort.
+ */
+template <typename Comparable>
+void heapsort( vector<Comparable> & a )
+{
+    for( int i = a.size( ) / 2 - 1; i >= 0; --i )  /* buildHeap */
+        percDown( a, i, a.size( ) );
+    for( int j = a.size( ) - 1; j > 0; --j )
+    {
+        std::swap( a[ 0 ], a[ j ] );               /* deleteMax */
+        percDown( a, 0, j );
+    }
+}
+
 
 /**
  * Internal method that makes recursive calls.
