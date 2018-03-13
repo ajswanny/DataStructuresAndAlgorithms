@@ -104,13 +104,13 @@ void generate_reddit_data(bool verbose, vector<RedditElement> &reddit_elements) 
 
 
 // Performs operations for "Bubble Sort".
-void perform_bubble_sorts(const vector<RedditElement> &V) {
+void perform_bubble_sorts(const vector<RedditElement> &V, bool verbose) {
 
     // Define multiplier for indexing of 'V'.
     int multiplier = 1;
 
     // Define a matrix to contain READS and WRITES for all Bubble Sorts.
-    int reads_writes[10][2];
+    vector<vector<int>> reads_writes;
 
     // Perform Bubble Sorts for 100, 200, ... 1000 elements within 'V'.
     for (int i = 1; i < 11; i++) {
@@ -121,23 +121,21 @@ void perform_bubble_sorts(const vector<RedditElement> &V) {
         // Define alias to 'V' truncated by 'T'.
         vector<RedditElement> reddit_elements(V.begin(), V.begin() + T);
 
-//        cout << reddit_elements.size() << endl;
 
         // Perform Bubble Sort.
-        vector<int> RW = bubbleSort(reddit_elements, false);
-        reads_writes[i - 1][0] = RW[0];
-        reads_writes[i - 1][1] = RW[1];
+        vector<int> read_write_counts = bubbleSort(reddit_elements, false);
+        reads_writes.push_back(read_write_counts);
 
-    }
+        if (verbose) {
 
+            cout << T << endl;
 
-    for (int i = 0; i < 10; i++) {
+            cout << "Reads: " << read_write_counts[0] << endl;
+            cout << "Writes: " << read_write_counts[1] << endl;
 
-        cout << reads_writes[i][0] << endl;
-        cout << reads_writes[i][1] << endl;
+            cout << "\n\n";
 
-        cout << "\n";
-
+        }
 
     }
 

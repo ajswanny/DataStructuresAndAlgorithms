@@ -27,8 +27,9 @@ void printVector(const vector<Comparable> &v) {
 
 // Complexity of Bubble Sort is Quadratic = O(N^2)
 template <typename Comparable>
-vector<int>& bubbleSort(vector<Comparable> &v, const bool &verbose) {
+vector<int> bubbleSort(vector<Comparable> &v, const bool &verbose) {
 
+    // Define counters for READS and WRITES.
     int reads = 0;
     int writes = 0;
 
@@ -59,13 +60,12 @@ vector<int>& bubbleSort(vector<Comparable> &v, const bool &verbose) {
 
     }
 
-    vector<int> reads_writes(2);
 
+    // Define collection of READS and WRITES statistics.
+    vector<int> reads_writes;
     reads_writes.push_back(reads);
     reads_writes.push_back(writes);
 
-    cout << "Reads: " << reads_writes[0] << endl;
-    cout << "Writes: " << reads_writes[1] << endl;
 
     return reads_writes;
 

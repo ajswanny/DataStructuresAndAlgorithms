@@ -19,7 +19,7 @@ int main() {
 
 
     // Perform operations for "Bubble Sort".
-    perform_bubble_sorts(data);
+    perform_bubble_sorts(data, true);
 
 
     return 0;
