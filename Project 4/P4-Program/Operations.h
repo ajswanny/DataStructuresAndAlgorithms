@@ -12,6 +12,7 @@
 #include <string>
 
 #include "RedditElement.h"
+#include "CustomSort.h"
 
 using namespace std;
 
@@ -103,8 +104,32 @@ void generate_reddit_data(bool verbose, vector<RedditElement> &reddit_elements) 
 
 
 // Performs operations for "Bubble Sort".
-void perform_bubble_sorts() {
+void perform_bubble_sorts(const vector<RedditElement> &V) {
 
+    // Define multiplier for indexing of 'V'.
+    int multiplier = 1;
+
+    // Define a matrix to contain READS and WRITES for all Bubble Sorts.
+    int reads_writes[10][2];
+
+    // Perform Bubble Sorts for 100, 200, ... 1000 elements within 'V'.
+    for (int i = 1; i < 11; i++) {
+
+        // Define multiplied truncation variable.
+        int T = 100 * i;
+
+        // Define alias to 'V' truncated by 'T'.
+        vector<RedditElement> reddit_elements(V.begin(), V.begin() + T);
+
+        cout << reddit_elements.size() << endl;
+
+        // Perform Bubble Sort.
+        vector<int> RW = bubbleSort(reddit_elements, false);
+
+
+        cout << "\n" << endl;
+
+    }
 
 
 }
