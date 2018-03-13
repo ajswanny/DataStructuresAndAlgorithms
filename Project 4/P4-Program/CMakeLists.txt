@@ -3,4 +3,4 @@ project(P4_Program)
 
 set(CMAKE_CXX_STANDARD 14)
 
-add_executable(P4_Program main.cpp RedditElement.cpp RedditElement.h Sort.cpp Sort.h Operations.h CustomSort.h)
+add_executable(P4_Program main.cpp RedditElement.cpp RedditElement.h Sort.cpp Sort.h Operations.h CustomSort.h CustomSort.cpp)

@@ -1,18 +1,29 @@
+//
+// Created by Alexander Swanson on 3/12/18.
+//
+
 #include <iostream>
 
 #include "Operations.h"
+#include "CustomSort.h"
+
 
 int main() {
-    std::cout << "Hello, World!" << std::endl;
 
 
+    // Define a container for data.
     vector<RedditElement> data;
 
-
+    // Populate the vector, having resized the data beforehand to be composed of just 1000 entries.
     generate_reddit_data(false, data);
 
 
-    cout << data[0];
+    // Perform operations for "Bubble Sort".
+    perform_bubble_sorts();
+
+
+
+
 
     return 0;
 

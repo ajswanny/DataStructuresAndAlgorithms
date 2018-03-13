@@ -1,5 +1,5 @@
 //
-// Created by Admin on 3/12/18.
+// Created by Lisa Dion
 //
 
 #ifndef P4_PROGRAM_CUSTOMSORT_H
@@ -11,8 +11,9 @@
 using namespace std;
 
 
+//
 template <typename Comparable>
-void printVector(const vector<int> &v) {
+void printVector(const vector<Comparable> &v) {
     for (int i = 0; i < v.size(); ++i) {
         cout << v[i];
         if (i != v.size() - 1) {

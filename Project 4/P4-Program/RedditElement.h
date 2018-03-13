@@ -1,5 +1,5 @@
 //
-// Created by Admin on 3/11/18.
+// Created by Alexander Swanson on 3/11/18.
 //
 
 #ifndef P4_PROGRAM_REDDITELEMENT_H

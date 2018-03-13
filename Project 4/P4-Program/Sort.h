@@ -1,6 +1,7 @@
-/*
- *  Data Structures and Algorithm Analysis in C++ (Fourth Edition), by Mark Allen Weiss
- */
+//
+// Data Structures and Algorithm Analysis in C++ (Fourth Edition), by Mark Allen Weiss.
+//
+
 
 #ifndef P4_PROGRAM_SORT_H
 #define P4_PROGRAM_SORT_H

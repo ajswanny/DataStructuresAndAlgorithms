@@ -1,5 +1,5 @@
 //
-// Created by Admin on 3/12/18.
+// Created by Alexander Swanson on 3/12/18.
 //
 
 #ifndef P4_PROGRAM_OPERATIONS_H
@@ -31,7 +31,6 @@ void vector_to_csv(vector<int> &v, const string &file_path) {
 
 
 // Generates the vector of 1202 RedditElements for reserved data.
-
 void generate_reddit_data(bool verbose, vector<RedditElement> &reddit_elements) {
 
 
@@ -99,6 +98,14 @@ void generate_reddit_data(bool verbose, vector<RedditElement> &reddit_elements) 
         file_input.clear();
 
     }
+
+}
+
+
+// Performs operations for "Bubble Sort".
+void perform_bubble_sorts() {
+
+
 
 }
 
