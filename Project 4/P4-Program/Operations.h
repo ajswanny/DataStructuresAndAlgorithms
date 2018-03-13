@@ -121,13 +121,23 @@ void perform_bubble_sorts(const vector<RedditElement> &V) {
         // Define alias to 'V' truncated by 'T'.
         vector<RedditElement> reddit_elements(V.begin(), V.begin() + T);
 
-        cout << reddit_elements.size() << endl;
+//        cout << reddit_elements.size() << endl;
 
         // Perform Bubble Sort.
         vector<int> RW = bubbleSort(reddit_elements, false);
+        reads_writes[i - 1][0] = RW[0];
+        reads_writes[i - 1][1] = RW[1];
+
+    }
 
 
-        cout << "\n" << endl;
+    for (int i = 0; i < 10; i++) {
+
+        cout << reads_writes[i][0] << endl;
+        cout << reads_writes[i][1] << endl;
+
+        cout << "\n";
+
 
     }
 
