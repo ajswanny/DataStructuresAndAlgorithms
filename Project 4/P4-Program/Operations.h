@@ -17,7 +17,13 @@
 using namespace std;
 
 
-// Outputs a vector to a CSV file, delimited by a newline character.
+/**
+ *
+ * Outputs a vector to a CSV file, delimited by a newline character.
+ *
+ * @param v
+ * @param file_path
+ */
 void vector_to_csv(vector<int> &v, const string &file_path) {
 
     ofstream out_file(file_path);
@@ -31,7 +37,14 @@ void vector_to_csv(vector<int> &v, const string &file_path) {
 }
 
 
-// Generates the vector of 1202 RedditElements for reserved data.
+
+/**
+ *
+ * Generates the vector of 1202 RedditElements for reserved data.
+ *
+ * @param verbose
+ * @param reddit_elements
+ */
 void generate_reddit_data(bool verbose, vector<RedditElement> &reddit_elements) {
 
 
@@ -103,8 +116,49 @@ void generate_reddit_data(bool verbose, vector<RedditElement> &reddit_elements) 
 }
 
 
-// Performs operations for "Bubble Sort".
-void perform_bubble_sorts(const vector<RedditElement> &V, bool verbose) {
+
+void archive_read_write_counts(const string &file_path, vector<vector<int>> read_write_counts) {
+
+
+    // Open the file.
+    ofstream out_file(file_path);
+
+
+    for (int i = 1; i < 11; i++) {
+
+        // Define multiplied truncation variable.
+        int T = 100 * i;
+
+        // Output index max.
+        out_file << T << ',' << endl;
+
+        // Output READS.
+        out_file << read_write_counts[i][0] << ',' << endl;
+
+        // Output WRITES.
+        out_file << read_write_counts[i][1] << ',' << endl;
+
+    }
+
+
+    // Close the file.
+    out_file.close();
+
+    // Clear the stream.
+    out_file.clear();
+
+
+}
+
+
+
+/**
+ *
+ * Performs operations for "Bubble Sort".
+ *
+ * @return
+ */
+vector<vector<int>> perform_bubble_sorts(const vector<RedditElement> &V, bool verbose) {
 
     // Define multiplier for indexing of 'V'.
     int multiplier = 1;
@@ -133,12 +187,14 @@ void perform_bubble_sorts(const vector<RedditElement> &V, bool verbose) {
             cout << "Reads: " << read_write_counts[0] << endl;
             cout << "Writes: " << read_write_counts[1] << endl;
 
-            cout << "\n\n";
+            cout << "\n";
 
         }
 
     }
 
+    // Return the matrix of read-write statistics.
+    return reads_writes;
 
 }
 

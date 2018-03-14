@@ -18,8 +18,15 @@ int main() {
     generate_reddit_data(false, data);
 
 
-    // Perform operations for "Bubble Sort".
-    perform_bubble_sorts(data, true);
+    // Perform operations for Bubble Sort.
+    vector<vector<int>> bubble_sort_rw_data = perform_bubble_sorts(data, true);
+
+    // Archive read and write data for Bubble Sort.
+    archive_read_write_counts("bubble_sort_rw_data.csv", bubble_sort_rw_data);
+
+
+    // Perform operations for Insertion Sort.
+
 
 
     return 0;

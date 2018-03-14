@@ -22,6 +22,9 @@ using namespace std;
 template <typename Comparable>
 void insertionSort( vector<Comparable> & a )
 {
+
+    int
+
     for( int p = 1; p < a.size( ); ++p )
     {
         Comparable tmp = std::move( a[ p ] );

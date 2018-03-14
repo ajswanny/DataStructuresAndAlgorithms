@@ -1,0 +1,2 @@
+Abbreviations
+    - rw: Reads and Writes
