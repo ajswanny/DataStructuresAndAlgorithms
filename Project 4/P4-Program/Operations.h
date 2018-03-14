@@ -13,6 +13,7 @@
 
 #include "RedditElement.h"
 #include "CustomSort.h"
+#include "Sort.h"
 
 using namespace std;
 
@@ -133,10 +134,10 @@ void archive_read_write_counts(const string &file_path, vector<vector<int>> read
         out_file << T << ',' << endl;
 
         // Output READS.
-        out_file << read_write_counts[i][0] << ',' << endl;
+        out_file << read_write_counts[i - 1][0] << ',' << endl;
 
         // Output WRITES.
-        out_file << read_write_counts[i][1] << ',' << endl;
+        out_file << read_write_counts[i - 1][1] << ',' << endl;
 
     }
 
@@ -178,6 +179,54 @@ vector<vector<int>> perform_bubble_sorts(const vector<RedditElement> &V, bool ve
 
         // Perform Bubble Sort.
         vector<int> read_write_counts = bubbleSort(reddit_elements, false);
+        reads_writes.push_back(read_write_counts);
+
+        if (verbose) {
+
+            cout << T << endl;
+
+            cout << "Reads: " << read_write_counts[0] << endl;
+            cout << "Writes: " << read_write_counts[1] << endl;
+
+            cout << "\n";
+
+        }
+
+    }
+
+    // Return the matrix of read-write statistics.
+    return reads_writes;
+
+}
+
+
+
+/**
+ *
+ * Performs operations for "Insertion Sort".
+ *
+ * @return
+ */
+vector<vector<int>> perform_insertion_sorts(const vector<RedditElement> &V, bool verbose) {
+
+    // Define multiplier for indexing of 'V'.
+    int multiplier = 1;
+
+    // Define a matrix to contain READS and WRITES for all Insertion Sorts.
+    vector<vector<int>> reads_writes;
+
+    // Perform Bubble Sorts for 100, 200, ... 1000 elements within 'V'.
+    for (int i = 1; i < 11; i++) {
+
+        // Define multiplied truncation variable.
+        int T = 100 * i;
+
+        // Define alias to 'V' truncated by 'T'.
+        vector<RedditElement> reddit_elements(V.begin(), V.begin() + T);
+
+
+        // Perform Insertion Sort.
+        vector<int> read_write_counts = insertionSort(reddit_elements);
         reads_writes.push_back(read_write_counts);
 
         if (verbose) {

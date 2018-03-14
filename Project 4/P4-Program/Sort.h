@@ -20,7 +20,7 @@ using namespace std;
  * Simple insertion sort.
  */
 template <typename Comparable>
-void insertionSort( vector<Comparable> & a )
+vector<int> insertionSort( vector<Comparable> & a )
 {
 
     // Define counters for READS and WRITES.
@@ -30,12 +30,39 @@ void insertionSort( vector<Comparable> & a )
     for( int p = 1; p < a.size( ); ++p )
     {
         Comparable tmp = std::move( a[ p ] );
+        //
+        // Increment READS and WRITES.
+        reads++;
+        writes++;
 
         int j;
-        for( j = p; j > 0 && tmp < a[ j - 1 ]; --j )
-            a[ j ] = std::move( a[ j - 1 ] );
+        for( j = p; j > 0 && tmp < a[ j - 1 ]; --j ) {
+            //
+            // Increment READS.
+            reads++;
+
+            a[j] = std::move(a[j - 1]);
+            //
+            // Increment READS and WRITES.
+            reads++;
+            writes += 2;
+
+        }
+
         a[ j ] = std::move( tmp );
+        //
+        // Increment WRITES.
+        writes++;
+
     }
+
+    // Define collection of READS and WRITES statistics.
+    vector<int> reads_writes;
+    reads_writes.push_back(reads);
+    reads_writes.push_back(writes);
+
+    return reads_writes;
+
 }
 
 
@@ -49,15 +76,38 @@ void insertionSort( vector<Comparable> & a )
 template <typename Comparable>
 void insertionSort( vector<Comparable> & a, int left, int right )
 {
+
+    // Define counters for READS and WRITES.
+    int reads = 0;
+    int writes = 0;
+
     for( int p = left + 1; p <= right; ++p )
     {
         Comparable tmp = std::move( a[ p ] );
+        //
+        // Increment WRITES.
+        writes++;
+
+
         int j;
 
-        for( j = p; j > left && tmp < a[ j - 1 ]; --j )
-            a[ j ] = std::move( a[ j - 1 ] );
+        for( j = p; j > left && tmp < a[ j - 1 ]; --j ) {
+
+            a[j] = std::move(a[j - 1]);
+            //
+            // Increment READS and WRITES.
+            reads++;
+            writes += 2;
+
+        }
+
         a[ j ] = std::move( tmp );
+        //
+        // Increment WRITES.
+        writes++;
+
     }
+
 }
 
 
@@ -231,6 +281,11 @@ const Comparable & median3( vector<Comparable> & a, int left, int right )
 template <typename Comparable>
 void quicksort( vector<Comparable> & a, int left, int right )
 {
+
+    // Define counters for READS and WRITES.
+    int reads = 0;
+    int writes = 0;
+
     if( left + 10 <= right )
     {
         const Comparable & pivot = median3( a, left, right );
@@ -240,14 +295,32 @@ void quicksort( vector<Comparable> & a, int left, int right )
         for( ; ; )
         {
             while( a[ ++i ] < pivot ) { }
+            //
+            // Increment READS
+            reads++;
+
             while( pivot < a[ --j ] ) { }
-            if( i < j )
-                std::swap( a[ i ], a[ j ] );
-            else
+            //
+            // Increment READS.
+            reads++;
+
+            if( i < j ) {
+                std::swap(a[i], a[j]);
+                //
+                // Increment WRITES.
+                writes++;
+
+            } else {
+
                 break;
+
+            }
         }
 
         std::swap( a[ i ], a[ right - 1 ] );  // Restore pivot
+        //
+        // Increment WRITES.
+        writes++;
 
         quicksort( a, left, i - 1 );     // Sort small elements
         quicksort( a, i + 1, right );    // Sort large elements
