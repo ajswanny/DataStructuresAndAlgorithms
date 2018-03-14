@@ -23,7 +23,9 @@ template <typename Comparable>
 void insertionSort( vector<Comparable> & a )
 {
 
-    int
+    // Define counters for READS and WRITES.
+    int reads = 0;
+    int writes = 0;
 
     for( int p = 1; p < a.size( ); ++p )
     {
