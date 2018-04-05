@@ -126,18 +126,49 @@ vector<int> insertionSort( vector<Comparable> & a, int left, int right )
  * Shellsort, using Shell's (poor) increments.
  */
 template <typename Comparable>
-void shellsort( vector<Comparable> & a )
+vector<int> shellsort( vector<Comparable> & a )
 {
+
+    // Define counters for READS and WRITES.
+    int reads = 0;
+    int writes = 0;
+
+
     for( int gap = a.size( ) / 2; gap > 0; gap /= 2 )
         for( int i = gap; i < a.size( ); ++i )
         {
             Comparable tmp = std::move( a[ i ] );
+            //
+            // Increment READS.
+            reads++;
             int j = i;
 
-            for( ; j >= gap && tmp < a[ j - gap ]; j -= gap )
-                a[ j ] = std::move( a[ j - gap ] );
+            // Increment READS.
+            //
+            reads++;
+            for( ; j >= gap && tmp < a[ j - gap ]; j -= gap ) {
+
+                a[j] = std::move(a[j - gap]);
+                //
+                // Increment READS and WRITES.
+                reads++;
+                writes++;
+
+            }
             a[ j ] = std::move( tmp );
+            //
+            // Increment WRITES.
+            writes++;
         }
+
+
+    // Define collection of READS and WRITES statistics.
+    vector<int> reads_writes;
+    reads_writes.push_back(reads);
+    reads_writes.push_back(writes);
+
+    return reads_writes;
+
 }
 
 
@@ -292,6 +323,11 @@ void mergeSort( vector<Comparable> & a,
 template <typename Comparable>
 void mergeSort( vector<Comparable> & a )
 {
+
+    // Define counters for READS and WRITES.
+    int reads = 0;
+    int writes = 0;
+
     vector<Comparable> tmpArray( a.size( ) );
 
     mergeSort( a, tmpArray, 0, a.size( ) - 1 );
@@ -315,11 +351,12 @@ void merge( vector<Comparable> & a, vector<Comparable> & tmpArray,
     int numElements = rightEnd - leftPos + 1;
 
     // Main loop
-    while( leftPos <= leftEnd && rightPos <= rightEnd )
-        if( a[ leftPos ] <= a[ rightPos ] )
-            tmpArray[ tmpPos++ ] = std::move( a[ leftPos++ ] );
+    while( leftPos <= leftEnd && rightPos <= rightEnd ) {
+        if (a[leftPos] <= a[rightPos])
+            tmpArray[tmpPos++] = std::move(a[leftPos++]);
         else
-            tmpArray[ tmpPos++ ] = std::move( a[ rightPos++ ] );
+            tmpArray[tmpPos++] = std::move(a[rightPos++]);
+    }
 
     while( leftPos <= leftEnd )    // Copy rest of first half
         tmpArray[ tmpPos++ ] = std::move( a[ leftPos++ ] );

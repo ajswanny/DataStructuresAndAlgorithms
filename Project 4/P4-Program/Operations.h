@@ -266,7 +266,7 @@ vector<vector<int>> perform_quick_sorts(const vector<RedditElement> &V, bool ver
     // Define multiplier for indexing of 'V'.
     int multiplier = 1;
 
-    // Define a matrix to contain READS and WRITES for all Insertion Sorts.
+    // Define a matrix to contain READS and WRITES for all Quick Sorts.
     vector<vector<int>> reads_writes;
 
     // Perform Bubble Sorts for 100, 200, ... 1000 elements within 'V'.
@@ -279,7 +279,7 @@ vector<vector<int>> perform_quick_sorts(const vector<RedditElement> &V, bool ver
         vector<RedditElement> reddit_elements(V.begin(), V.begin() + T);
 
 
-        // Perform Insertion Sort.
+        // Perform Quick Sort.
         vector<int> read_write_counts = quicksort(reddit_elements);
         reads_writes.push_back(read_write_counts);
 
@@ -314,7 +314,7 @@ vector<vector<int>> perform_heap_sorts(const vector<RedditElement> &V, bool verb
     // Define multiplier for indexing of 'V'.
     int multiplier = 1;
 
-    // Define a matrix to contain READS and WRITES for all Insertion Sorts.
+    // Define a matrix to contain READS and WRITES for all Heap Sorts.
     vector<vector<int>> reads_writes;
 
     // Perform Bubble Sorts for 100, 200, ... 1000 elements within 'V'.
@@ -327,7 +327,7 @@ vector<vector<int>> perform_heap_sorts(const vector<RedditElement> &V, bool verb
         vector<RedditElement> reddit_elements(V.begin(), V.begin() + T);
 
 
-        // Perform Insertion Sort.
+        // Perform Heap Sort.
         vector<int> read_write_counts = heapsort(reddit_elements);
         reads_writes.push_back(read_write_counts);
 
@@ -353,16 +353,16 @@ vector<vector<int>> perform_heap_sorts(const vector<RedditElement> &V, bool verb
 
 /**
  *
- * Performs operations for "Selection Sort".
+ * Performs operations for "Shell Sort".
  *
  * @return
  */
-vector<vector<int>> perform_selection_sorts(const vector<RedditElement> &V, bool verbose) {
+vector<vector<int>> perform_shell_sorts(const vector<RedditElement> &V, bool verbose) {
 
     // Define multiplier for indexing of 'V'.
     int multiplier = 1;
 
-    // Define a matrix to contain READS and WRITES for all Insertion Sorts.
+    // Define a matrix to contain READS and WRITES for all Shell Sorts.
     vector<vector<int>> reads_writes;
 
     // Perform Bubble Sorts for 100, 200, ... 1000 elements within 'V'.
@@ -375,8 +375,56 @@ vector<vector<int>> perform_selection_sorts(const vector<RedditElement> &V, bool
         vector<RedditElement> reddit_elements(V.begin(), V.begin() + T);
 
 
-        // Perform Insertion Sort.
-        vector<int> read_write_counts = heapsort(reddit_elements);
+        // Perform Shell Sort.
+        vector<int> read_write_counts = shellsort(reddit_elements);
+        reads_writes.push_back(read_write_counts);
+
+        if (verbose) {
+
+            cout << T << endl;
+
+            cout << "Reads: " << read_write_counts[0] << endl;
+            cout << "Writes: " << read_write_counts[1] << endl;
+
+            cout << "\n";
+
+        }
+
+    }
+
+    // Return the matrix of read-write statistics.
+    return reads_writes;
+
+}
+
+
+
+/**
+ *
+ * Performs operations for "Merge Sort".
+ *
+ * @return
+ */
+vector<vector<int>> perform_alt_bubble_sorts(const vector<RedditElement> &V, bool verbose) {
+
+    // Define multiplier for indexing of 'V'.
+    int multiplier = 1;
+
+    // Define a matrix to contain READS and WRITES for all Merge Sorts.
+    vector<vector<int>> reads_writes;
+
+    // Perform Bubble Sorts for 100, 200, ... 1000 elements within 'V'.
+    for (int i = 1; i < 11; i++) {
+
+        // Define multiplied truncation variable.
+        int T = 100 * i;
+
+        // Define alias to 'V' truncated by 'T'.
+        vector<RedditElement> reddit_elements(V.begin(), V.begin() + T);
+
+
+        // Perform Merge Sort.
+        vector<int> read_write_counts = bubble_sort_alt(reddit_elements);
         reads_writes.push_back(read_write_counts);
 
         if (verbose) {

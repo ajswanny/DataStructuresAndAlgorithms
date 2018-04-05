@@ -66,8 +66,17 @@ int main() {
 
     //// Perform operations for Two-Sort
 
-    // Perform operations for Selection Sort.
-    vector<vector<int>> selection_sort_rw_data = perform(data, true);
+    // Perform operations for Shell Sort.
+//    vector<vector<int>> shell_sort_rw_data = perform_shell_sorts(data, true);
+
+    // Archive read and write data for Shell Sort.
+//    archive_read_write_counts("TWOSORT_shell_sort_rw_data.csv", shell_sort_rw_data);
+
+    // Perform operations for ALT Bubble Sort.
+//    vector<vector<int>> alt_bubble_sort_rw_data = perform_alt_bubble_sorts(data, true);
+
+    // Archive read and write data for ALT Bubble Sort.
+//    archive_read_write_counts("TWOSORT_alt_bubble_sort_rw_data.csv", alt_bubble_sort_rw_data);
 
 
 
