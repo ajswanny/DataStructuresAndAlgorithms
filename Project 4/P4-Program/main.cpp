@@ -11,6 +11,12 @@
 int main() {
 
 
+
+    // SWAP FUNCTIONS ARE 2 READS AND 2 WRITES
+    // FOR LOOPS
+
+
+
     // Define a container for data.
     vector<RedditElement> data;
 
@@ -25,6 +31,7 @@ int main() {
 //    archive_read_write_counts("bubble_sort_rw_data.csv", bubble_sort_rw_data);
 
 
+
     // Perform operations for Insertion Sort.
 //    vector<vector<int>> insertion_sort_rw_data = perform_insertion_sorts(data, true);
 
@@ -32,7 +39,37 @@ int main() {
 //    archive_read_write_counts("insertion_sort_rw_data.csv", insertion_sort_rw_data);
 
 
-    // Perform operations for Quick Sort
+
+    // Perform operations for Quick Sort.
+//    vector<vector<int>> quick_sort_rw_data = perform_quick_sorts(data, true);
+
+    // Archive read and write data for Quick Sort.
+//    archive_read_write_counts("quick_sort_rw_data.csv", quick_sort_rw_data);
+
+
+
+    // Perform operations for Heap Sort.
+//    vector<vector<int>> heap_sort_rw_data = perform_heap_sorts(data, true);
+
+    // Archive read and write data for Heap Sort.
+//    archive_read_write_counts("heap_sort_rw_data.csv", heap_sort_rw_data);
+
+
+
+    // Perform operations for Heap Sort.
+//    vector<vector<int>> heap_sort_rw_data = perform_heap_sorts(data, true);
+
+    // Archive read and write data for Heap Sort.
+//    archive_read_write_counts("heap_sort_rw_data.csv", heap_sort_rw_data);
+
+
+
+    //// Perform operations for Two-Sort
+
+    // Perform operations for Selection Sort.
+    vector<vector<int>> selection_sort_rw_data = perform(data, true);
+
+
 
 
     return 0;

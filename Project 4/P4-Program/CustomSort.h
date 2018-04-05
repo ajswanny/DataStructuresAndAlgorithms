@@ -38,18 +38,20 @@ vector<int> bubbleSort(vector<Comparable> &v, const bool &verbose) {
     while (numSwaps != 0) {
         numSwaps = 0;
         for (int i = 0; i + 1 < maxIndex; ++i) {
-            if (v[i] > v[i + 1]) {
 
-                // Record READS.
-                reads += 2;
+            // Record READS.
+            reads += 2;
+            //
+            if (v[i] > v[i + 1]) {
 
                 // swap the elements
                 Comparable temp = v[i];
                 v[i] = v[i + 1];
                 v[i + 1] = temp;
-
-                // Record WRITES.
-                writes += 2;
+                //
+                // Record READS and WRITES.
+                reads += 2;
+                writes += 3;
 
                 ++numSwaps;
             }
