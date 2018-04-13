@@ -124,7 +124,7 @@ void generate_reddit_data(bool verbose, vector<RedditElement> &reddit_elements) 
  * @param file_path
  * @param read_write_counts
  */
-void archive_read_write_counts(const string &file_path, vector<vector<int>> read_write_counts) {
+void archive_read_write_counts(const string &file_path, vector<vector<int>> read_write_counts, bool include_index) {
 
 
     // Open the file.
@@ -137,7 +137,7 @@ void archive_read_write_counts(const string &file_path, vector<vector<int>> read
         int T = 100 * i;
 
         // Output index max.
-        out_file << T << ',' << endl;
+        if (include_index) { out_file << T << ',' << endl; }
 
         // Output READS.
         out_file << read_write_counts[i - 1][0] << ',' << endl;

@@ -25,7 +25,13 @@ void printVector(const vector<Comparable> &v) {
 }
 
 
-// Complexity of Bubble Sort is Quadratic = O(N^2)
+/**
+ *
+ * @tparam Comparable
+ * @param v
+ * @param verbose
+ * @return
+ */
 template <typename Comparable>
 vector<int> bubbleSort(vector<Comparable> &v, const bool &verbose) {
 
@@ -51,7 +57,7 @@ vector<int> bubbleSort(vector<Comparable> &v, const bool &verbose) {
                 //
                 // Record READS and WRITES.
                 reads += 2;
-                writes += 3;
+                writes += 2;
 
                 ++numSwaps;
             }
@@ -77,6 +83,8 @@ vector<int> bubbleSort(vector<Comparable> &v, const bool &verbose) {
 
 
 /**
+ * A modified version of Bubble Sort by Lisa Dion - altered to compare exclusively RedditElement objects
+ * using their "Score" data field.
  *
  * @param v
  * @param verbose
@@ -107,7 +115,7 @@ vector<int> bubble_sort_alt(vector<RedditElement> &v) {
                 //
                 // Record READS and WRITES.
                 reads += 2;
-                writes += 3;
+                writes += 2;
 
                 ++numSwaps;
             }

@@ -31,21 +31,21 @@ vector<int> insertionSort( vector<Comparable> & a )
     {
         Comparable tmp = std::move( a[ p ] );
         //
-        // Increment READS and WRITES.
+        // Increment READS.
         reads++;
-        writes++;
+
 
         int j;
+        // Increment READS.
+        //
+        reads++;
         for( j = p; j > 0 && tmp < a[ j - 1 ]; --j ) {
-            //
-            // Increment READS.
-            reads++;
 
             a[j] = std::move(a[j - 1]);
             //
             // Increment READS and WRITES.
             reads++;
-            writes += 2;
+            writes++;
 
         }
 
@@ -144,8 +144,8 @@ vector<int> shellsort( vector<Comparable> & a )
             int j = i;
 
             // Increment READS.
-            //
             reads++;
+            //
             for( ; j >= gap && tmp < a[ j - gap ]; j -= gap ) {
 
                 a[j] = std::move(a[j - gap]);
@@ -189,16 +189,16 @@ inline int leftChild( int i )
  * n is the logical size of the binary heap.
  */
 template <typename Comparable>
-vector<int> percDown( vector<Comparable> & a, int i, int n, int &reads, int &writes )
+void percDown( vector<Comparable> & a, int i, int n, int &reads, int &writes )
 {
     int child;
     Comparable tmp;
 
+    // Increment READS.
+    reads++;
+    //
     for( tmp = std::move( a[ i ] ); leftChild( i ) < n; i = child )
     {
-        //
-        // Increment READS.
-        reads++;
 
         child = leftChild( i );
         // Increment READS.
@@ -220,7 +220,7 @@ vector<int> percDown( vector<Comparable> & a, int i, int n, int &reads, int &wri
             //
             // Increment READS and WRITES.
             reads++;
-            writes += 2;
+            writes++;
 
         }
 
@@ -233,14 +233,6 @@ vector<int> percDown( vector<Comparable> & a, int i, int n, int &reads, int &wri
     //
     // Increment WRITES.
     writes++;
-
-
-    // Define collection of READS and WRITES statistics.
-    vector<int> reads_writes;
-    reads_writes.push_back(reads);
-    reads_writes.push_back(writes);
-
-    return reads_writes;
 
 }
 
@@ -260,11 +252,7 @@ vector<int> heapsort( vector<Comparable> & a )
     for( int i = a.size( ) / 2 - 1; i >= 0; --i ) { /* buildHeap */
 
         // Perform percDown and obtain READS and WRITES.
-        vector<int> reads_writes = percDown(a, i, a.size(), reads, writes);
-//        //
-//        // Increment READS and WRITES.
-//        reads += reads_writes[0];
-//        writes += reads_writes[1];
+        percDown(a, i, a.size(), reads, writes);
 
     }
 
@@ -277,22 +265,18 @@ vector<int> heapsort( vector<Comparable> & a )
         writes += 2;
 
         // Perform percDown and obtain READS and WRITES.
-        vector<int> reads_writes = percDown( a, 0, j, reads, writes );
-//        //
-//        // Increment READS and WRITES.
-//        reads += reads_writes[0];
-//        writes += reads_writes[1];
+        percDown( a, 0, j, reads, writes );
 
     }
 
     // Define collection of READS and WRITES statistics.
     // Define collection of READS and WRITES statistics.
-    vector<int> meta_reads_writes;
+    vector<int> reads_writes;
 
-    meta_reads_writes.push_back(reads);
-    meta_reads_writes.push_back(writes);
+    reads_writes.push_back(reads);
+    reads_writes.push_back(writes);
 
-    return meta_reads_writes;
+    return reads_writes;
 
 }
 
@@ -399,7 +383,7 @@ const Comparable & median3( vector<Comparable> & a, int left, int right )
  * right is the right-most index of the subarray.
  */
 template <typename Comparable>
-vector<int> quicksort( vector<Comparable> & a, int left, int right, int reads, int writes )
+vector<int> quicksort( vector<Comparable> & a, int left, int right, int &reads, int &writes )
 {
 
 
