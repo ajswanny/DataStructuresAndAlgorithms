@@ -1,0 +1,912 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CMakeRunConfigurationManager" shouldGenerate="true" shouldDeleteObsolete="true" buildAllGenerated="false">
+    <generated />
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="c6db3bd7-9e95-424d-8c8c-a94c0f0133ca" name="Default" comment="">
+      <change beforePath="" afterPath="$PROJECT_DIR$/../../Project 2/Instructions.pdf" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../../Project 2/Project 2/.idea/.name" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../../Project 2/Project 2/.idea/Project 2.iml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../../Project 2/Project 2/.idea/codeStyles/Project.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../../Project 2/Project 2/.idea/dictionaries/admin.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../../Project 2/Project 2/.idea/misc.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../../Project 2/Project 2/.idea/modules.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../../Project 2/Project 2/.idea/workspace (1).xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../../Project 2/Project 2/.idea/workspace.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../../Project 2/Project 2/CMakeLists.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../../Project 2/Project 2/RedditData.cpp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../../Project 2/Project 2/RedditData.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../../Project 2/Project 2/cmake-build-debug/CMakeCache.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../../Project 2/Project 2/cmake-build-debug/CMakeFiles/3.9.6/CMakeCCompiler.cmake" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../../Project 2/Project 2/cmake-build-debug/CMakeFiles/3.9.6/CMakeCXXCompiler.cmake" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../../Project 2/Project 2/cmake-build-debug/CMakeFiles/3.9.6/CMakeDetermineCompilerABI_C.bin" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../../Project 2/Project 2/cmake-build-debug/CMakeFiles/3.9.6/CMakeDetermineCompilerABI_CXX.bin" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../../Project 2/Project 2/cmake-build-debug/CMakeFiles/3.9.6/CMakeSystem.cmake" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../../Project 2/Project 2/cmake-build-debug/CMakeFiles/3.9.6/CompilerIdC/CMakeCCompilerId.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../../Project 2/Project 2/cmake-build-debug/CMakeFiles/3.9.6/CompilerIdC/a.out" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../../Project 2/Project 2/cmake-build-debug/CMakeFiles/3.9.6/CompilerIdCXX/CMakeCXXCompilerId.cpp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../../Project 2/Project 2/cmake-build-debug/CMakeFiles/3.9.6/CompilerIdCXX/a.out" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../../Project 2/Project 2/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../../Project 2/Project 2/cmake-build-debug/CMakeFiles/CMakeOutput.log" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../../Project 2/Project 2/cmake-build-debug/CMakeFiles/Makefile.cmake" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../../Project 2/Project 2/cmake-build-debug/CMakeFiles/Makefile2" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../../Project 2/Project 2/cmake-build-debug/CMakeFiles/Project_2.dir/CXX.includecache" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../../Project 2/Project 2/cmake-build-debug/CMakeFiles/Project_2.dir/DependInfo.cmake" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../../Project 2/Project 2/cmake-build-debug/CMakeFiles/Project_2.dir/RedditData.cpp.o" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../../Project 2/Project 2/cmake-build-debug/CMakeFiles/Project_2.dir/build.make" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../../Project 2/Project 2/cmake-build-debug/CMakeFiles/Project_2.dir/cmake_clean.cmake" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../../Project 2/Project 2/cmake-build-debug/CMakeFiles/Project_2.dir/depend.internal" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../../Project 2/Project 2/cmake-build-debug/CMakeFiles/Project_2.dir/depend.make" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../../Project 2/Project 2/cmake-build-debug/CMakeFiles/Project_2.dir/flags.make" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../../Project 2/Project 2/cmake-build-debug/CMakeFiles/Project_2.dir/link.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../../Project 2/Project 2/cmake-build-debug/CMakeFiles/Project_2.dir/main.cpp.o" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../../Project 2/Project 2/cmake-build-debug/CMakeFiles/Project_2.dir/progress.make" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../../Project 2/Project 2/cmake-build-debug/CMakeFiles/TargetDirectories.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../../Project 2/Project 2/cmake-build-debug/CMakeFiles/clion-environment.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../../Project 2/Project 2/cmake-build-debug/CMakeFiles/clion-log.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../../Project 2/Project 2/cmake-build-debug/CMakeFiles/cmake.check_cache" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../../Project 2/Project 2/cmake-build-debug/CMakeFiles/feature_tests.bin" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../../Project 2/Project 2/cmake-build-debug/CMakeFiles/feature_tests.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../../Project 2/Project 2/cmake-build-debug/CMakeFiles/feature_tests.cxx" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../../Project 2/Project 2/cmake-build-debug/CMakeFiles/progress.marks" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../../Project 2/Project 2/cmake-build-debug/Makefile" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../../Project 2/Project 2/cmake-build-debug/Project_2" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../../Project 2/Project 2/cmake-build-debug/Project_2.cbp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../../Project 2/Project 2/cmake-build-debug/cmake_install.cmake" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../../Project 2/Project 2/cmake-build-debug/reddit_data.csv" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../../Project 2/Project 2/main.cpp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../../Project 2/Report/Project 2 Report.docx" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../../Project 2/Report/Project 2 Report.pdf" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../../Project 2/Submission Receipt.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../../Project 3/Figures/avl1.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../../Project 3/Figures/avl2.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../../Project 3/Figures/avl3.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../../Project 3/Figures/bst1.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../../Project 3/Figures/bst2.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../../Project 3/Figures/bst3.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../../Project 3/Figures/splay1.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../../Project 3/Figures/splay2.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../../Project 3/Figures/splay3.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../../Project 3/Instructions.pdf" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../../Project 3/P3-Program/.idea/.name" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../../Project 3/P3-Program/.idea/P3-Program.iml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../../Project 3/P3-Program/.idea/codeStyles/Project.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../../Project 3/P3-Program/.idea/dictionaries/admin.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../../Project 3/P3-Program/.idea/misc.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../../Project 3/P3-Program/.idea/modules.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../../Project 3/P3-Program/.idea/workspace.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../../Project 3/P3-Program/AvlTree.cpp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../../Project 3/P3-Program/AvlTree.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../../Project 3/P3-Program/BinarySearchTree.cpp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../../Project 3/P3-Program/BinarySearchTree.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../../Project 3/P3-Program/CMakeLists.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../../Project 3/P3-Program/RedditDataGeneration.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../../Project 3/P3-Program/RedditElement.cpp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../../Project 3/P3-Program/RedditElement.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../../Project 3/P3-Program/SplayTree.cpp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../../Project 3/P3-Program/SplayTree.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../../Project 3/P3-Program/cmake-build-debug/CMakeCache.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../../Project 3/P3-Program/cmake-build-debug/CMakeFiles/3.9.6/CMakeCCompiler.cmake" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../../Project 3/P3-Program/cmake-build-debug/CMakeFiles/3.9.6/CMakeCXXCompiler.cmake" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../../Project 3/P3-Program/cmake-build-debug/CMakeFiles/3.9.6/CMakeDetermineCompilerABI_C.bin" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../../Project 3/P3-Program/cmake-build-debug/CMakeFiles/3.9.6/CMakeDetermineCompilerABI_CXX.bin" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../../Project 3/P3-Program/cmake-build-debug/CMakeFiles/3.9.6/CMakeSystem.cmake" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../../Project 3/P3-Program/cmake-build-debug/CMakeFiles/3.9.6/CompilerIdC/CMakeCCompilerId.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../../Project 3/P3-Program/cmake-build-debug/CMakeFiles/3.9.6/CompilerIdC/a.out" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../../Project 3/P3-Program/cmake-build-debug/CMakeFiles/3.9.6/CompilerIdCXX/CMakeCXXCompilerId.cpp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../../Project 3/P3-Program/cmake-build-debug/CMakeFiles/3.9.6/CompilerIdCXX/a.out" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../../Project 3/P3-Program/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../../Project 3/P3-Program/cmake-build-debug/CMakeFiles/CMakeOutput.log" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../../Project 3/P3-Program/cmake-build-debug/CMakeFiles/Makefile.cmake" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../../Project 3/P3-Program/cmake-build-debug/CMakeFiles/Makefile2" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../../Project 3/P3-Program/cmake-build-debug/CMakeFiles/P3_Program.dir/AvlTree.cpp.o" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../../Project 3/P3-Program/cmake-build-debug/CMakeFiles/P3_Program.dir/BinarySearchTree.cpp.o" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../../Project 3/P3-Program/cmake-build-debug/CMakeFiles/P3_Program.dir/CXX.includecache" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../../Project 3/P3-Program/cmake-build-debug/CMakeFiles/P3_Program.dir/DependInfo.cmake" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../../Project 3/P3-Program/cmake-build-debug/CMakeFiles/P3_Program.dir/RedditElement.cpp.o" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../../Project 3/P3-Program/cmake-build-debug/CMakeFiles/P3_Program.dir/SplayTree.cpp.o" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../../Project 3/P3-Program/cmake-build-debug/CMakeFiles/P3_Program.dir/build.make" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../../Project 3/P3-Program/cmake-build-debug/CMakeFiles/P3_Program.dir/cmake_clean.cmake" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../../Project 3/P3-Program/cmake-build-debug/CMakeFiles/P3_Program.dir/depend.internal" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../../Project 3/P3-Program/cmake-build-debug/CMakeFiles/P3_Program.dir/depend.make" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../../Project 3/P3-Program/cmake-build-debug/CMakeFiles/P3_Program.dir/flags.make" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../../Project 3/P3-Program/cmake-build-debug/CMakeFiles/P3_Program.dir/link.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../../Project 3/P3-Program/cmake-build-debug/CMakeFiles/P3_Program.dir/main.cpp.o" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../../Project 3/P3-Program/cmake-build-debug/CMakeFiles/P3_Program.dir/progress.make" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../../Project 3/P3-Program/cmake-build-debug/CMakeFiles/TargetDirectories.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../../Project 3/P3-Program/cmake-build-debug/CMakeFiles/clion-environment.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../../Project 3/P3-Program/cmake-build-debug/CMakeFiles/clion-log.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../../Project 3/P3-Program/cmake-build-debug/CMakeFiles/cmake.check_cache" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../../Project 3/P3-Program/cmake-build-debug/CMakeFiles/feature_tests.bin" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../../Project 3/P3-Program/cmake-build-debug/CMakeFiles/feature_tests.c" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../../Project 3/P3-Program/cmake-build-debug/CMakeFiles/feature_tests.cxx" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../../Project 3/P3-Program/cmake-build-debug/CMakeFiles/progress.marks" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../../Project 3/P3-Program/cmake-build-debug/Makefile" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../../Project 3/P3-Program/cmake-build-debug/P3_Program" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../../Project 3/P3-Program/cmake-build-debug/P3_Program.cbp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../../Project 3/P3-Program/cmake-build-debug/cmake_install.cmake" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../../Project 3/P3-Program/cmake-build-debug/integers_ordered.csv" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../../Project 3/P3-Program/cmake-build-debug/integers_random.csv" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../../Project 3/P3-Program/cmake-build-debug/integers_repeated.csv" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../../Project 3/P3-Program/cmake-build-debug/reddit_data.csv" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../../Project 3/P3-Program/dsexceptions.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../../Project 3/P3-Program/main.cpp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../../Project 3/P3_Correct" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../../Project 3/Project 3 Report.docx" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../../Project 3/Project 3 Report.pdf" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../../Project 3/Proof of Submission.png" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/../Instructions.pdf" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/.name" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/P4-Program.iml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/dictionaries/admin.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/CMakeLists.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/CustomSort.cpp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/CustomSort.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Glossary.txt" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Instructions.pdf" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Operations.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/RedditElement.cpp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/RedditElement.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Sort.cpp" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/Sort.h" />
+      <change beforePath="" afterPath="$PROJECT_DIR$/main.cpp" />
+    </list>
+    <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="main.cpp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/main.cpp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="750">
+              <caret line="50" column="40" lean-forward="false" selection-start-line="50" selection-start-column="40" selection-end-line="50" selection-end-column="40" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="bubble_sort_rw_data.csv" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/cmake-build-debug/SortingRWData-Unindexed/bubble_sort_rw_data.csv">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="19" column="7" lean-forward="false" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="quick_sort_rw_data.csv" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/cmake-build-debug/SortingRWData-Unindexed/quick_sort_rw_data.csv">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="19" column="5" lean-forward="false" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Operations.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Operations.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="6390">
+              <caret line="426" column="46" lean-forward="false" selection-start-line="426" selection-start-column="46" selection-end-line="426" selection-end-column="46" />
+              <folding>
+                <element signature="e#286#562#0" expanded="false" />
+                <element signature="e#566#2373#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Sort.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Sort.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1920">
+              <caret line="128" column="12" lean-forward="false" selection-start-line="128" selection-start-column="12" selection-end-line="128" selection-end-column="12" />
+              <folding>
+                <element signature="e#10783#10804#0" expanded="true" />
+                <element signature="e#11815#11836#0" expanded="true" />
+                <element signature="e#11945#11966#0" expanded="true" />
+                <element signature="e#13224#13270#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CustomSort.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/CustomSort.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1755">
+              <caret line="117" column="27" lean-forward="false" selection-start-line="117" selection-start-column="27" selection-end-line="117" selection-end-column="27" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RedditElement.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/RedditElement.h">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="330">
+              <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>-=</find>
+      <find>l</find>
+      <find>long intr</find>
+      <find>long int</find>
+      <find>selectionS</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>int</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/cmake-build-debug/reddit_data.csv" />
+        <option value="$PROJECT_DIR$/Operations.h" />
+        <option value="$PROJECT_DIR$/main.cpp" />
+        <option value="$PROJECT_DIR$/cmake-build-debug/bubble_sort_rw_data.csv" />
+        <option value="$PROJECT_DIR$/cmake-build-debug/heap_sort_rw_data.csv" />
+        <option value="$PROJECT_DIR$/cmake-build-debug/insertion_sort_rw_data.csv" />
+        <option value="$PROJECT_DIR$/cmake-build-debug/quick_sort_rw_data.csv" />
+        <option value="$PROJECT_DIR$/cmake-build-debug/TWOSORT_alt_bubble_sort_rw_data.csv" />
+        <option value="$PROJECT_DIR$/cmake-build-debug/TWOSORT_shell_sort_rw_data.csv" />
+        <option value="$PROJECT_DIR$/Sort.h" />
+        <option value="$PROJECT_DIR$/CustomSort.h" />
+        <option value="$PROJECT_DIR$/cmake-build-debug/SortingRWData-Unindexed/bubble_sort_rw_data.csv" />
+        <option value="$PROJECT_DIR$/cmake-build-debug/SortingRWData-Unindexed/heap_sort_rw_data.csv" />
+        <option value="$PROJECT_DIR$/cmake-build-debug/SortingRWData-Unindexed/insertion_sort_rw_data.csv" />
+        <option value="$PROJECT_DIR$/cmake-build-debug/SortingRWData-Unindexed/quick_sort_rw_data.csv" />
+        <option value="$PROJECT_DIR$/cmake-build-debug/SortingRWData-Unindexed/TWOSORT_alt_bubble_sort_rw_data.csv" />
+        <option value="$PROJECT_DIR$/cmake-build-debug/SortingRWData-Unindexed/TWOSORT_shell_sort_rw_data.csv" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="width" value="1440" />
+    <option name="height" value="900" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+      <manualOrder />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="P4_Program" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
+              <item name="P4-Program" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="P4_Program" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
+              <item name="P4-Program" type="462c0819:PsiDirectoryNode" />
+              <item name="cmake-build-debug" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="P4_Program" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
+              <item name="P4-Program" type="462c0819:PsiDirectoryNode" />
+              <item name="cmake-build-debug" type="462c0819:PsiDirectoryNode" />
+              <item name="SortingRWData-Unindexed" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/cmake-build-debug/SortingRWData-Unindexed" />
+      <recent name="$PROJECT_DIR$/cmake-build-debug/SortingRWData_Indexed" />
+      <recent name="$PROJECT_DIR$/cmake-build-debug" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="P4_Program" type="CMakeRunConfiguration" factoryName="Application" temporary="true" PASS_PARENT_ENVS_2="true" PROJECT_NAME="P4_Program" TARGET_NAME="P4_Program" CONFIG_NAME="Debug" RUN_TARGET_PROJECT_NAME="P4_Program" RUN_TARGET_NAME="P4_Program">
+      <envs />
+    </configuration>
+    <recent_temporary>
+      <list size="1">
+        <item index="0" class="java.lang.String" itemvalue="Application.P4_Program" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false">
+    <option name="remove_strategy" value="false" />
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="c6db3bd7-9e95-424d-8c8c-a94c0f0133ca" name="Default" comment="" />
+      <created>1521467145574</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1521467145574</updated>
+      <workItem from="1521467148511" duration="362000" />
+      <workItem from="1522270943736" duration="915000" />
+      <workItem from="1522676832729" duration="28000" />
+      <workItem from="1522676923916" duration="13000" />
+      <workItem from="1522803036450" duration="7265000" />
+      <workItem from="1522813943441" duration="703000" />
+      <workItem from="1522816755577" duration="388000" />
+      <workItem from="1522818948064" duration="5233000" />
+      <workItem from="1522885619211" duration="7882000" />
+      <workItem from="1523296727166" duration="15000" />
+    </task>
+    <task id="LOCAL-00001" summary="Completed Heap Sort.">
+      <created>1522887299723</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1522887299723</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Completed all algorithms.">
+      <created>1522890389637</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1522890389637</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="22804000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="0" y="0" width="1440" height="900" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16913319" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32994923" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.14822336" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32994923" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.17055838" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.328934" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ORDER">
+      <list>
+        <option value="0" />
+        <option value="2" />
+        <option value="3" />
+        <option value="1" />
+      </list>
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <MESSAGE value="Completed Heap Sort." />
+    <MESSAGE value="Completed all algorithms." />
+    <option name="LAST_COMMIT_MESSAGE" value="Completed all algorithms." />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/Operations.h</url>
+          <line>333</line>
+          <option name="timeStamp" value="13" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/Sort.h</url>
+          <line>247</line>
+          <option name="timeStamp" value="28" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/Sort.h</url>
+          <line>248</line>
+          <option name="timeStamp" value="29" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="com.jetbrains.cidr.execution.debugger.OCBreakpointType">
+          <url>file://$PROJECT_DIR$/Sort.h</url>
+          <line>193</line>
+          <option name="timeStamp" value="44" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="49" />
+    </breakpoint-manager>
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/RedditElement.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CustomSort.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="20" column="31" lean-forward="true" selection-start-line="20" selection-start-column="31" selection-end-line="20" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Operations.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4950">
+          <caret line="330" column="43" lean-forward="false" selection-start-line="330" selection-start-column="43" selection-end-line="330" selection-end-column="43" />
+          <folding>
+            <element signature="e#286#562#0" expanded="false" />
+            <element signature="e#566#2373#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CustomSort.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="39" column="14" lean-forward="false" selection-start-line="39" selection-start-column="14" selection-end-line="39" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RedditElement.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sort.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3030">
+          <caret line="202" column="13" lean-forward="true" selection-start-line="202" selection-start-column="13" selection-end-line="202" selection-end-column="13" />
+          <folding>
+            <element signature="e#10783#10804#0" expanded="true" />
+            <element signature="e#11815#11836#0" expanded="true" />
+            <element signature="e#11945#11966#0" expanded="true" />
+            <element signature="e#13224#13270#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="735">
+          <caret line="49" column="0" lean-forward="true" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Operations.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4950">
+          <caret line="330" column="43" lean-forward="true" selection-start-line="330" selection-start-column="43" selection-end-line="330" selection-end-column="43" />
+          <folding>
+            <element signature="e#286#562#0" expanded="false" />
+            <element signature="e#566#2373#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CustomSort.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="39" column="14" lean-forward="true" selection-start-line="39" selection-start-column="14" selection-end-line="39" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RedditElement.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sort.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3750">
+          <caret line="250" column="35" lean-forward="true" selection-start-line="250" selection-start-column="35" selection-end-line="250" selection-end-column="35" />
+          <folding>
+            <element signature="e#10783#10804#0" expanded="true" />
+            <element signature="e#11815#11836#0" expanded="true" />
+            <element signature="e#11945#11966#0" expanded="true" />
+            <element signature="e#13224#13270#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Operations.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="42" column="2" lean-forward="false" selection-start-line="42" selection-start-column="2" selection-end-line="42" selection-end-column="2" />
+          <folding>
+            <element signature="e#286#562#0" expanded="false" />
+            <element signature="e#566#2373#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/reddit_data.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17985">
+          <caret line="1199" column="94" lean-forward="false" selection-start-line="1199" selection-start-column="94" selection-end-line="1199" selection-end-column="94" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RedditElement.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sort.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6990">
+          <caret line="466" column="0" lean-forward="false" selection-start-line="466" selection-start-column="0" selection-end-line="466" selection-end-column="0" />
+          <folding>
+            <element signature="e#10783#10804#0" expanded="true" />
+            <element signature="e#11815#11836#0" expanded="true" />
+            <element signature="e#11945#11966#0" expanded="true" />
+            <element signature="e#13224#13270#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Operations.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="42" column="2" lean-forward="false" selection-start-line="42" selection-start-column="2" selection-end-line="42" selection-end-column="2" />
+          <folding>
+            <element signature="e#286#562#0" expanded="false" />
+            <element signature="e#566#2373#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/reddit_data.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17985">
+          <caret line="1199" column="94" lean-forward="false" selection-start-line="1199" selection-start-column="94" selection-end-line="1199" selection-end-column="94" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RedditElement.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sort.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6990">
+          <caret line="466" column="0" lean-forward="false" selection-start-line="466" selection-start-column="0" selection-end-line="466" selection-end-column="0" />
+          <folding>
+            <element signature="e#10783#10804#0" expanded="true" />
+            <element signature="e#11815#11836#0" expanded="true" />
+            <element signature="e#11945#11966#0" expanded="true" />
+            <element signature="e#13224#13270#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="29" column="0" lean-forward="true" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Operations.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="630">
+          <caret line="42" column="2" lean-forward="true" selection-start-line="42" selection-start-column="2" selection-end-line="42" selection-end-column="2" />
+          <folding>
+            <element signature="e#286#562#0" expanded="false" />
+            <element signature="e#566#2373#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/reddit_data.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17985">
+          <caret line="1199" column="94" lean-forward="false" selection-start-line="1199" selection-start-column="94" selection-end-line="1199" selection-end-column="94" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RedditElement.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sort.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6990">
+          <caret line="466" column="0" lean-forward="true" selection-start-line="466" selection-start-column="0" selection-end-line="466" selection-end-column="0" />
+          <folding>
+            <element signature="e#10783#10804#0" expanded="true" />
+            <element signature="e#11815#11836#0" expanded="true" />
+            <element signature="e#11945#11966#0" expanded="true" />
+            <element signature="e#13224#13270#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Operations (1).h" />
+    <entry file="file://$PROJECT_DIR$/main (1).cpp" />
+    <entry file="file://$PROJECT_DIR$/Sort.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="0" lean-forward="true" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CustomSort.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/quick_sort_rw_sort.csv" />
+    <entry file="file:///Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/vector">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="1224" column="25" lean-forward="false" selection-start-line="1224" selection-start-column="25" selection-end-line="1224" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/RedditElement.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="330">
+          <caret line="22" column="0" lean-forward="false" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/SortingRWData_Indexed/insertion_sort_rw_data.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/SortingRWData_Indexed/bubble_sort_rw_data.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/SortingRWData_Indexed/heap_sort_rw_data.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="29" column="6" lean-forward="false" selection-start-line="29" selection-start-column="6" selection-end-line="29" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/SortingRWData_Indexed/quick_sort_rw_data.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="29" column="2" lean-forward="false" selection-start-line="29" selection-start-column="2" selection-end-line="29" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/reddit_data.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="724">
+          <caret line="1199" column="94" lean-forward="false" selection-start-line="1199" selection-start-column="94" selection-end-line="1199" selection-end-column="94" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/SortingRWData_Indexed/TWOSORT_alt_bubble_sort_rw_data.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="29" column="7" lean-forward="false" selection-start-line="29" selection-start-column="7" selection-end-line="29" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/SortingRWData_Indexed/TWOSORT_shell_sort_rw_data.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="435">
+          <caret line="29" column="6" lean-forward="false" selection-start-line="29" selection-start-column="6" selection-end-line="29" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sort.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1920">
+          <caret line="128" column="12" lean-forward="false" selection-start-line="128" selection-start-column="12" selection-end-line="128" selection-end-column="12" />
+          <folding>
+            <element signature="e#10783#10804#0" expanded="true" />
+            <element signature="e#11815#11836#0" expanded="true" />
+            <element signature="e#11945#11966#0" expanded="true" />
+            <element signature="e#13224#13270#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/CustomSort.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1755">
+          <caret line="117" column="27" lean-forward="false" selection-start-line="117" selection-start-column="27" selection-end-line="117" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Operations.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="6390">
+          <caret line="426" column="46" lean-forward="false" selection-start-line="426" selection-start-column="46" selection-end-line="426" selection-end-column="46" />
+          <folding>
+            <element signature="e#286#562#0" expanded="false" />
+            <element signature="e#566#2373#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/SortingRWData-Unindexed/heap_sort_rw_data.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="6" lean-forward="false" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/SortingRWData-Unindexed/insertion_sort_rw_data.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="7" lean-forward="false" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/SortingRWData-Unindexed/TWOSORT_alt_bubble_sort_rw_data.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="7" lean-forward="false" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/SortingRWData-Unindexed/TWOSORT_shell_sort_rw_data.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="6" lean-forward="false" selection-start-line="19" selection-start-column="6" selection-end-line="19" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="750">
+          <caret line="50" column="40" lean-forward="false" selection-start-line="50" selection-start-column="40" selection-end-line="50" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/SortingRWData-Unindexed/bubble_sort_rw_data.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="7" lean-forward="false" selection-start-line="19" selection-start-column="7" selection-end-line="19" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cmake-build-debug/SortingRWData-Unindexed/quick_sort_rw_data.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="5" lean-forward="false" selection-start-line="19" selection-start-column="5" selection-end-line="19" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
