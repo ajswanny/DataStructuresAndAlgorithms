@@ -16,37 +16,57 @@ void SeparateChainingTesting(vector<Lecturer> &lecturers);
 void ProbingTesting(vector<Lecturer> &lecturers);
 
 int main() {
+
     cout << "Hello, World!" << endl;
-    vector<Lecturer> lecturers;
-    readLecturers(lecturers);
 
-    for (Lecturer &l : lecturers) {
-        cout << l.getName() << ": ";
-        cout << hornerHash(l.getName(), 13) << endl;
-    }
-
-    SeparateChaining<int> jenny(7, guessWho);
-    vector<int> numbers = {8, 6, 7, 5, 3, 0, 9};
-
-    for (int number : numbers) {
-        jenny.insert(number);
-        cout << hornerHash(guessWho(number), 7) << endl;
-        jenny.printTable(cout);
-        cout << endl;
-    }
-
-    /*
-    Probing<string> simpsons(7, whoAmI);
-    vector<string> names = {"Homer", "Marge", "Bart", "Lisa", "Maggie", "Santa's Little Helper"};
-
-    for (string name : names ) {
-        simpsons.insert(name);
-        cout << hornerHash(name, simpsons.getSize()) << endl;
-        simpsons.printTable(cout);
-        cout << endl;
-    }
-*/
     return 0;
+
+}
+
+
+void demo() {
+
+//    vector<Lecturer> lecturers;
+//    readLecturers(lecturers);
+
+//    for (Lecturer &l : lecturers) {
+//        cout << l.getName() << ": ";
+//        cout << hornerHash(l.getName(), 13) << endl;
+//    }
+
+
+//    SeparateChaining<int> jenny(7, guessWho);
+//    vector<int> numbers = {8, 6, 7, 5, 3, 0, 9};
+//
+//    for (int number : numbers) {
+//        jenny.insert(number);
+//        cout << hornerHash(guessWho(number), 7) << endl;
+//        jenny.printTable(cout);
+//        cout << endl;
+//    }
+
+
+//    SeparateChaining<string> string_separate_chain(7, whoAmI);
+//    vector<string> names1 = {"Homer", "Marge", "Bart", "Lisa", "Maggie", "Santa's Little Helper"};
+//
+//    for (string name : names1) {
+//        string_separate_chain.insert(name);
+//        cout << hornerHash(whoAmI(name), 7) << endl;
+//        string_separate_chain.printTable(cout);
+//        cout << endl;
+//    }
+
+
+//    Probing<string> simpsons(7, whoAmI);
+//    vector<string> names = {"Homer", "Marge", "Bart", "Lisa", "Maggie", "Santa's Little Helper"};
+//
+//    for (string name : names ) {
+//        simpsons.insert(name);
+//        cout << hornerHash(name, simpsons.getSize()) << endl;
+//        simpsons.printTable(cout);
+//        cout << endl;
+//    }
+
 }
 
 unsigned int hornerHash(const string &key, int tableSize) {
