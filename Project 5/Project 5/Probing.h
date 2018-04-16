@@ -88,6 +88,9 @@ public:
         return tableSize;
     }
 
+    /**
+     * Uses Linear Probing.
+     */
     void insert(const T &item) {
         std::string key = getKey(item);
         // Check to make sure the item is not already in the table.

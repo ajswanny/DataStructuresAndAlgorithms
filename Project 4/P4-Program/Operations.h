@@ -52,7 +52,6 @@ void generate_reddit_data(bool verbose, vector<RedditElement> &reddit_elements) 
     // Define the input stream object.
     ifstream file_input("reddit_data.csv");
 
-
     // Define a String to contain an entire line of input.
     string file_line;
 

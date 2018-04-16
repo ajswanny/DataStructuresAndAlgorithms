@@ -2,26 +2,135 @@
 #include "NoCollisionDetection.h"
 #include "Probing.h"
 #include "SeparateChaining.h"
+#include "RedditElement.h"
+#include "Operations.h"
 #include <iostream>
 #include <vector>
+
 using namespace std;
 
 unsigned int hornerHash(const string &key, int tableSize);
-string getLecturerName(const Lecturer &lec);
-string whoAmI(const string &s);
-string guessWho(const int &i);
 
-void NoCollisionTesting(vector<Lecturer> &lecs);
-void SeparateChainingTesting(vector<Lecturer> &lecturers);
-void ProbingTesting(vector<Lecturer> &lecturers);
+string get_reddit_element_key(const RedditElement &reddit_element);
+
+
+void work_separate_chaining_hts(vector<RedditElement> &data);
+
+void work_linear_probing_hts(vector<RedditElement> &data);
+
+
+// Declare Separate-Chaining Hash-Tables.
+SeparateChaining<RedditElement> SC_HashTable(10, get_reddit_element_key);
+SeparateChaining<RedditElement> SC_HT_SZ_002(2, get_reddit_element_key);
+SeparateChaining<RedditElement> SC_HT_SZ_127(127, get_reddit_element_key);
+SeparateChaining<RedditElement> SC_HT_SZ_233(233, get_reddit_element_key);
+SeparateChaining<RedditElement> SC_HT_SZ_353(353, get_reddit_element_key);
+SeparateChaining<RedditElement> SC_HT_SZ_419(419, get_reddit_element_key);
+
+// Declare Linear-Probing Hash-Tables.
+Probing<RedditElement> LP_HashTable(10, get_reddit_element_key);
+Probing<RedditElement> LP_HT_SZ_002(2, get_reddit_element_key);
+Probing<RedditElement> LP_HT_SZ_127(127, get_reddit_element_key);
+Probing<RedditElement> LP_HT_SZ_233(233, get_reddit_element_key);
+Probing<RedditElement> LP_HT_SZ_353(353, get_reddit_element_key);
+Probing<RedditElement> LP_HT_SZ_419(419, get_reddit_element_key);
+
 
 int main() {
 
-    cout << "Hello, World!" << endl;
+    // Define a container for data.
+    vector<RedditElement> reddit_element_data;
+
+    // Populate the vector, having re-sized the data file beforehand to be composed of just 1000 entries.
+    generate_reddit_data(false, reddit_element_data);
+
+    // Define list of prime numbers to be used as Hash-Table initial sizes.
+    vector<int> prime_numbers = {2, 127, 233, 353, 419};
+
+
+    // Perform insertions for the Separate-Chaining Hash-Tables.
+    work_separate_chaining_hts(reddit_element_data);
+
+    // Perform insertions for the Linear-Probing Hash-Tables.
+    work_linear_probing_hts(reddit_element_data);
+
+
 
     return 0;
 
 }
+
+
+/**
+ *
+ * @param reddit_element
+ * @return
+ */
+string get_reddit_element_key(const RedditElement &reddit_element) {
+
+    return reddit_element.get_id();
+
+}
+
+
+
+/**
+ *
+ * @param data
+ */
+void work_separate_chaining_hts(vector<RedditElement> &data) {
+
+    /* Perform insertions. */
+    // Table Size: 10
+    populate_sc_hash_table(data, SC_HashTable);
+
+    // Table Size: 2
+    populate_sc_hash_table(data, SC_HT_SZ_002);
+
+    // Table Size: 127
+    populate_sc_hash_table(data, SC_HT_SZ_127);
+
+    // Table Size: 233
+    populate_sc_hash_table(data, SC_HT_SZ_233);
+
+    // Table Size: 353
+    populate_sc_hash_table(data, SC_HT_SZ_353);
+
+    // Table Size: 419
+    populate_sc_hash_table(data, SC_HT_SZ_419);
+
+}
+
+
+
+/**
+ *
+ * @param data
+ */
+void work_linear_probing_hts(vector<RedditElement> &data) {
+
+    /* Perform insertions. */
+    // Table Size: 10
+    populate_lp_hash_table(data, LP_HashTable);
+
+    // Table Size: 2
+    populate_lp_hash_table(data, LP_HT_SZ_002);
+
+    // Table Size: 127
+    populate_lp_hash_table(data, LP_HT_SZ_127);
+
+    // Table Size: 233
+    populate_lp_hash_table(data, LP_HT_SZ_233);
+
+    // Table Size: 353
+    populate_lp_hash_table(data, LP_HT_SZ_353);
+
+    // Table Size: 419
+    populate_lp_hash_table(data, LP_HT_SZ_419);
+
+}
+
+
 
 
 void demo() {
@@ -76,75 +185,4 @@ unsigned int hornerHash(const string &key, int tableSize) {
     }
     cout << hashVal << ", ";
     return hashVal % tableSize;
-}
-
-string getLecturerName(const Lecturer &lec) {
-    return lec.getName();
-}
-
-string whoAmI(const string &s) {
-    return s;
-}
-
-string guessWho(const int &i) {
-    return to_string(i);
-}
-
-void NoCollisionTesting(vector<Lecturer> &lecs) {
-    NoCollisionDetection<Lecturer> hashTable1(19, getLecturerName);
-    Lecturer dummy;
-    //cout << boolalpha << hashTable1.search("Lisa Dion", dummy) << endl;
-    cout << boolalpha << hashTable1.remove("Lisa Dion") << endl;
-    hashTable1.insert(lecs[0]); // insert Lisa
-    //cout << hashTable1.search("Lisa Dion", dummy) << endl;
-    cout << hashTable1.remove("Lisa Dion") << endl;
-
-    for (Lecturer &l : lecs) {
-        hashTable1.insert(l);
-    }
-    cout << "Bob's office: ";
-    if (hashTable1.search("Robert (Bob) Erickson", dummy)) {
-        cout << dummy.getOffice();
-    } else {
-        cout << "unknown";
-    }
-    cout << endl;
-}
-
-void SeparateChainingTesting(vector<Lecturer> &lecturers) {
-    SeparateChaining<Lecturer> hashTable2(13, getLecturerName);
-    hashTable2.printTable(cout);
-    for (Lecturer &l : lecturers) {
-        hashTable2.insert(l);
-    }
-    hashTable2.printTable(cout);
-    Lecturer dummy;
-    cout << boolalpha << hashTable2.search("Lisa Dion", dummy); // true
-    cout << " " << dummy.getOffice() << endl;
-    cout << hashTable2.search("Jackie Horton", dummy); // true
-    cout << " " << dummy.getOffice() << endl;
-    hashTable2.insert(lecturers[0]); // this should do nothing
-    cout << hashTable2.remove("Lisa Dion") << endl; // true
-    cout << hashTable2.search("Lisa Dion", dummy) << endl; // false
-    hashTable2.printTable(cout);
-}
-
-void ProbingTesting(vector<Lecturer> &lecturers) {
-    Probing<Lecturer> hashTable3(13, getLecturerName);
-    hashTable3.printTable(cout);
-    for (Lecturer &l : lecturers) {
-        hashTable3.insert(l);
-        hashTable3.printTable(cout);
-    }
-    Lecturer dummy;
-    cout << boolalpha << hashTable3.search("Lisa Dion", dummy); // true
-    cout << " " << dummy.getOffice() << endl;
-    cout << hashTable3.search("Jackie Horton", dummy); // true
-    cout << " " << dummy.getOffice() << endl;
-    hashTable3.insert(lecturers[0]); // this should do nothing
-    cout << hashTable3.remove("Lisa Dion") << endl; // true
-    cout << hashTable3.search("Lisa Dion", dummy) << endl; // false
-
-    hashTable3.printTable(cout);
-    cout << hashTable3.search("Jackie Horton", dummy) << endl; // true
 }
