@@ -111,6 +111,18 @@ void generate_reddit_data(bool verbose, vector<RedditElement> &reddit_elements) 
 }
 
 
+/**
+ *
+ * @param reddit_element
+ * @return
+ */
+string get_reddit_element_key(const RedditElement &reddit_element) {
+
+    return reddit_element.get_id();
+
+}
+
+
 
 /**
  *
@@ -119,13 +131,17 @@ void generate_reddit_data(bool verbose, vector<RedditElement> &reddit_elements) 
  * @param sc_table
  */
 template <typename Comparable>
-void populate_sc_hash_table(vector<Comparable> &data, SeparateChaining<Comparable> &sc_table) {
+int populate_sc_hash_table(vector<Comparable> &data, SeparateChaining<Comparable> &sc_table) {
+
+    int reads = 0;
 
     for (Comparable E : data) {
 
-        sc_table.insert(E);
+        reads += sc_table.insert(E);
 
     }
+
+    return reads;
 
 }
 
@@ -138,13 +154,17 @@ void populate_sc_hash_table(vector<Comparable> &data, SeparateChaining<Comparabl
  * @param lp_table
  */
 template <typename Comparable>
-void populate_lp_hash_table(vector<Comparable> &data, Probing<Comparable> &lp_table) {
+int populate_lp_hash_table(vector<Comparable> &data, Probing<Comparable> &lp_table) {
+
+    int insertion_reads = 0;
 
     for (Comparable E : data) {
 
-        lp_table.insert(E);
+        insertion_reads += lp_table.insert(E);
 
     }
+
+    return insertion_reads;
 
 }
 

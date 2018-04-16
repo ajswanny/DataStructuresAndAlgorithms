@@ -40,24 +40,46 @@ public:
         getKey = getKeyIn;
     }
 
-    void insert(const T &item) {
+    int insert(const T &item) {
+
+        // Define container for READS.
+        int insertion_reads = 0;
+
+        //
+        // Append READS.
+        insertion_reads++;
+        //
         std::string key = getKey(item);
+
         T dummy;
         // Check if the item is already in the hashTable
-        if (!search(key, dummy)) {
+
+        //
+        // Append READS.
+        insertion_reads++;
+        //
+        if (!search(key, dummy, insertion_reads)) {
             // Item is not there. Insert it.
             int index = hornerHash(key);
             hashTable[index].push_back(item);
         }
         // Item is in hashTable. Do nothing.
+
+        return insertion_reads;
+
     }
 
     // Assuming that keys are unique
     // if key leads to active hashItem, set item to hashItem and
     // return true. return false otherwise.
-    bool search(std::string key, T &item) {
+    bool search(std::string key, T &item, int &insertion_reads) {
         int index = hornerHash(key);
         for (T &hashItem : hashTable[index]) {
+            //
+            // Append READS.
+            insertion_reads++;
+            //
+
             if (getKey(hashItem) == key) {
                 // we found the item
                 item = hashItem;

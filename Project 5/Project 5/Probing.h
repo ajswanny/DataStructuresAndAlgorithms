@@ -53,24 +53,42 @@ private:
         return (n-2);
     }
 
-    void rehash() {
+    void rehash(int &insertion_reads) {
+
         // Make a copy of the hash table.
         vector<hashItem> oldTable = hashTable;
+
         // Resize the hash table.
         hashTable.resize(nextPrime(oldTable.size() * 2));
+
         // Remove everything from the hash table.
         for (hashItem &h : hashTable) {
+            //
+            // Append READS.
+            insertion_reads++;
+            //
+
             h.state = empty;
+
         }
+
         // Update fields.
-        tableSize = hashTable.size();
+        tableSize = static_cast<int>(hashTable.size());
         numberOfItems = 0;
+
         // Reinsert the active items.
         for (hashItem &h : oldTable) {
+            //
+            // Append READS.
+            insertion_reads += 2;
+            //
+
             if (h.state == active) {
                 insert(h.item);
             }
+
         }
+
     }
 
 public:
@@ -91,43 +109,85 @@ public:
     /**
      * Uses Linear Probing.
      */
-    void insert(const T &item) {
+    int insert(const T &item) {
+
+        // Define container for READS.
+        int insertion_reads = 0;
+
+
+        //
+        // Append READS.
+        insertion_reads++;
+        //
         std::string key = getKey(item);
+
+
         // Check to make sure the item is not already in the table.
         T temp;
-        if (!search(key, temp)) {
+        if (!search(key, temp, insertion_reads)) {
             int index = hornerHash(key);
             // Find an empty index to store the item.
             while (hashTable[index].state == active) {
+                //
+                // Append READS.
+                insertion_reads++;
+                //
+
                 ++index;
+
                 if (index == tableSize) {
                     // We reached the end of the hash table.
                     // Loop back to the beginning.
                     index = 0;
                 }
+
             }
+
             hashTable[index].item = item;
             hashTable[index].state = active;
             ++numberOfItems;
+
             if (numberOfItems > (tableSize / 2.0)) {
-                rehash();
+                rehash(insertion_reads);
             }
+
         }
+
+        return insertion_reads;
+
     }
 
     // Assuming that keys are unique.
     // If we find the hashItem, set item to hashItem and
     // return true. Return false otherwise.
-    bool search(std::string key, T &item) {
+    bool search(std::string key, T &item, int &insertion_reads) {
+
         int index = hornerHash(key);
         int startingIndex = index;
+
         while (hashTable[index].state != empty) {
+            //
+            // Append READS.
+            insertion_reads++;
+            //
+
+            //
+            // Append READS.
+            insertion_reads += 2;
+            //
             if (hashTable[index].state == active &&
                 getKey(hashTable[index].item) == key) {
                 // We found the item.
+
+                //
+                // Append READS.
+                insertion_reads++;
+                //
                 item = hashTable[index].item;
+
                 return true;
             }
+
             // The state is removed or
             // it's not the item we're looking for
             ++index;
@@ -142,6 +202,7 @@ public:
                 index = 0;
             }
         }
+
         // item not found in table
         return false;
     }
