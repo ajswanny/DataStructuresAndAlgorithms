@@ -1,3 +1,7 @@
+//
+// Created by Alexander Swanson.
+//
+
 #include "lecturer.h"
 #include "Probing.h"
 #include "SeparateChaining.h"
@@ -18,12 +22,28 @@ using namespace std;
 void work_separate_chaining_hts(vector<RedditElement> &data, bool verbose);
 
 
+/**
+ *
+ * @param data
+ * @param verbose
+ */
+void work_alt_separate_chaining_hts(vector<RedditElement> &data, bool verbose);
+
+
 
 /**
  *
  * @param data
  */
 void work_linear_probing_hts(vector<RedditElement> &data, bool verbose);
+
+
+/**
+ *
+ * @param data
+ * @param verbose
+ */
+void work_alt_linear_probing_hts(vector<RedditElement> &data, bool verbose);
 
 
 int main() {
@@ -46,14 +66,16 @@ int main() {
     work_linear_probing_hts(reddit_element_data, true);
 
 
+    // Perform insertions for the Separate-Chaining Hash-Tables using a different Hash item key.
+    work_alt_separate_chaining_hts(reddit_element_data, true);
+
+    // Perform insertions for the Linear-Chaining Hash-Tables using a different Hash item key.
+    work_alt_linear_probing_hts(reddit_element_data, true);
+
 
     return 0;
 
 }
-
-
-
-
 
 
 /**
@@ -98,6 +120,48 @@ void work_separate_chaining_hts(vector<RedditElement> &data, bool verbose) {
 
 }
 
+/**
+ *
+ * @param data
+ */
+void work_alt_separate_chaining_hts(vector<RedditElement> &data, bool verbose) {
+
+    /* Perform insertions. */
+    // Table Size: 10
+    int alt_sc_ht_sz_010_reads = populate_sc_hash_table(data, alt_SC_HashTable);
+
+    // Table Size: 2
+    int alt_sc_ht_sz_002_reads = populate_sc_hash_table(data, alt_SC_HT_SZ_002);
+
+    // Table Size: 127
+    int alt_sc_ht_sz_127_reads = populate_sc_hash_table(data, alt_SC_HT_SZ_127);
+
+    // Table Size: 233
+    int alt_sc_ht_sz_233_reads = populate_sc_hash_table(data, alt_SC_HT_SZ_233);
+
+    // Table Size: 353
+    int alt_sc_ht_sz_353_reads = populate_sc_hash_table(data, alt_SC_HT_SZ_353);
+
+    // Table Size: 419
+    int alt_sc_ht_sz_419_reads = populate_sc_hash_table(data, alt_SC_HT_SZ_419);
+
+
+    // Define collection of insertion READS.
+    vector<int> reads = {
+            alt_sc_ht_sz_010_reads,
+            alt_sc_ht_sz_002_reads,
+            alt_sc_ht_sz_127_reads,
+            alt_sc_ht_sz_233_reads,
+            alt_sc_ht_sz_353_reads,
+            alt_sc_ht_sz_419_reads
+    };
+
+
+    // Output READS data.
+    if (verbose) { for (int r : reads) { cout << r << endl; } cout << endl; }
+
+}
+
 
 
 /**
@@ -134,6 +198,48 @@ void work_linear_probing_hts(vector<RedditElement> &data, bool verbose) {
             lp_ht_sz_233_reads,
             lp_ht_sz_353_reads,
             lp_ht_sz_419_reads
+    };
+
+
+    // Output READS data.
+    if (verbose) { for (int r : reads) { cout << r << endl; } cout << endl; }
+
+}
+
+/**
+ *
+ * @param data
+ */
+void work_alt_linear_probing_hts(vector<RedditElement> &data, bool verbose) {
+
+    /* Perform insertions. */
+    // Table Size: 10
+    int alt_lp_ht_sz_010_reads = populate_lp_hash_table(data, alt_LP_HashTable);
+
+    // Table Size: 2
+    int alt_lp_ht_sz_002_reads = populate_lp_hash_table(data, alt_LP_HT_SZ_002);
+
+    // Table Size: 127
+    int alt_lp_ht_sz_127_reads = populate_lp_hash_table(data, alt_LP_HT_SZ_127);
+
+    // Table Size: 233
+    int alt_lp_ht_sz_233_reads = populate_lp_hash_table(data, alt_LP_HT_SZ_233);
+
+    // Table Size: 353
+    int alt_lp_ht_sz_353_reads = populate_lp_hash_table(data, alt_LP_HT_SZ_353);
+
+    // Table Size: 419
+    int alt_lp_ht_sz_419_reads = populate_lp_hash_table(data, alt_LP_HT_SZ_419);
+
+
+    // Define collection of insertion READS.
+    vector<int> reads = {
+            alt_lp_ht_sz_010_reads,
+            alt_lp_ht_sz_002_reads,
+            alt_lp_ht_sz_127_reads,
+            alt_lp_ht_sz_233_reads,
+            alt_lp_ht_sz_353_reads,
+            alt_lp_ht_sz_419_reads
     };
 
 

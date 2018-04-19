@@ -1,5 +1,5 @@
 //
-// Created by Admin on 4/15/18.
+// Created by Alexander Swanson on 4/15/18.
 //
 
 #ifndef PROJECT_5_OPERATIONS_H
@@ -116,9 +116,22 @@ void generate_reddit_data(bool verbose, vector<RedditElement> &reddit_elements) 
  * @param reddit_element
  * @return
  */
-string get_reddit_element_key(const RedditElement &reddit_element) {
+string get_reddit_element_id(const RedditElement &reddit_element) {
 
     return reddit_element.get_id();
+
+}
+
+
+
+/**
+ *
+ * @param reddit_element
+ * @return
+ */
+string get_reddit_element_utc_creation(const RedditElement &reddit_element) {
+
+    return to_string( reddit_element.get_created_utc() );
 
 }
 
